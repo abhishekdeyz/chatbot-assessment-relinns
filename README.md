@@ -1,74 +1,67 @@
-# chatbot-assessment-relinns
-Console-based AI chatbot built with Python and Hugging Face API, capable of scraping website content and generating intelligent responses using contextual data. Developed as part of a technical assessment for Relinns Technologies.
+# 🧠 AI Chatbot with Web Scraping & Hugging Face Integration
+
+This project is a smart *AI Chatbot* that automatically *scrapes data from any website* and uses the *Hugging Face API* to generate contextual responses.  
+It was developed as part of the *Relinns Technologies Internship Task*.
+
+---
+
+## 🚀 Features
+
+- 🌐 *Website Scraping* — Extracts and parses data from any given URL using BeautifulSoup.
+- 💬 *Smart Chatbot* — Uses Hugging Face models to give human-like, context-aware answers.
+- 🧾 *Context Memory* — Stores website content and products locally in the cached_contexts folder.
+- ⚡ *Lightweight* — Runs directly from terminal, no complex setup needed.
+- 🔑 *Customizable API Key* — Uses Hugging Face token for secure model access.
+
+---
+
+## 🛠 Tech Stack
+
+| Component | Technology Used |
+|------------|-----------------|
+| Language | Python 3.12+ |
+| Web Scraping | requests, beautifulsoup4 |
+| AI Model | huggingface_hub |
+| Storage | Local text & JSON files |
+| Environment | venv (Python virtual environment) |
+
+---
+
+## ⚙ Setup Instructions
+
+### 1️⃣ Clone or Download the Project
+```bash
+git clone www.github.com/abhishekdeyz
+cd abhishek_chatbot
+
+2️⃣ Create and Activate Virtual Environment
+python -m venv venv
+venv\Scripts\activate
+
+3️⃣ Install Required Libraries
+pip install requests beautifulsoup4 huggingface_hub
+
+4️⃣ Add Your Hugging Face API Key
+	•	Open main.py
+	•	Replace this line:
+    API_URL = "YOUR_HUGGINGFACE_MODEL_URL"
+API_KEY = "YOUR_HUGGINGFACE_API_KEY"
 
 
-# Getting Started with Create React App
+🌐 Website Scraping
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To scrape any website, run:
 
-## Available Scripts
+python main.py --scrape --url "https://botpenguin.com"
 
-In the project directory, you can run:
 
-### `npm start`
+🤖 Running the Chatbot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Once scraping is done, start the chatbot:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+python main.py
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User: What is BotPenguin?
+Bot: Description: BotPenguin’s Chatbot Maker & Live Chat for Website, WhatsApp, Facebook, Instagram & Telegram Generate 10x more leads Solve 80% more queries Engage 70% more visitors Earn 90% more revenue Get Started FREE FREE Forever Plan. No Credit Card Required.
+Link: https://app.botpenguin.com/authentication?signup=1&u=https://botpenguin.com/
